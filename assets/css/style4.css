@@ -1,0 +1,22 @@
+div{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+@media(width:600px){
+    div{
+        background-image: url(../images/31.jpg);
+    }
+}
+
+@media(min-width:200px)and (max-width:600px)
+    {
+    div{
+        background-color: black;
+    }
+}
+ @media(max-width:600px){
+    div{
+        background-color: green;
+    }
+ }
