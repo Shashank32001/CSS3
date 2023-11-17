@@ -1,22 +1,52 @@
 div{
-    height: 50px;
-    width: 50px;
-    background-color: red;
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    border: 2px solid #000;
+    text-align: center;
+    transition: linear;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transform: scaley(1); */
+    transition: all 2s ease-in-out;
 }
-@media(width:600px){
+div:hover{
+    background-color: red;
+    /* transition: 2s; */
+    font-size: 20px;
+    transform: skew(30deg);
+}
+div:active{
+    background-color: aqua;
+}
+@media(max-width:300px)
+{
     div{
-        background-image: url(../images/31.jpg);
+        background: url(../images/31.jpg) ; 
+        background-size: cover;
     }
 }
 
-@media(min-width:200px)and (max-width:600px)
+@media(min-width:300px)and (max-width:400px)
     {
     div{
-        background-color: black;
+        background: url(../images/32.jpg);
+        background-size: cover;
     }
 }
- @media(max-width:600px){
+@media(min-width:400px)and (max-width:600px)
+    {
     div{
-        background-color: green;
+         background-color: red; 
+        
+    }
+}
+ @media(min-width:600px){
+    div{
+        background-color: blue;
     }
  }

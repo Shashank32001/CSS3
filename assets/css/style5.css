@@ -1,0 +1,28 @@
+  div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* animation-name: colorAnimate;
+    animation-duration: 2s;
+    /* animation-timing-function: ease-in; */
+    /* animation-delay: 0;
+    animation-iteration-count: infinite; */ 
+    animation: colorAnimate 2s ease-in 1s infinite;
+  }
+  
+  @keyframes colorAnimate {
+        0%{
+            background-color: red;
+            left: 20px;
+            /* {font-size: 20px;} */
+        }
+        100%{
+            background-color: aqua;
+            left: 200px;
+            
+        }   
+    }
